@@ -19,8 +19,8 @@ public class MarketController {
     }
 
     @GetMapping("/add")
-    public void basket (@RequestParam ("id") List<Integer> ids) {
-        marketService.add(ids);
+    public void basket (@RequestParam ("id") List<Integer> id) {
+        marketService.add(id);
     }
 
     @GetMapping("/get")

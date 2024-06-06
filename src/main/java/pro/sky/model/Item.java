@@ -5,21 +5,18 @@ import java.util.Objects;
 
 public class Item {
 
-    private final int  productIdentifier;
-    private final String title;
+    private final Integer  productIdentifier;
 
-    public Item(Integer productIdentifier, String title) {
+
+    public Item(Integer productIdentifier) {
         this.productIdentifier = productIdentifier;
-        this.title = title;
+
     }
 
     public int getProductIdentifier() {
         return productIdentifier;
     }
 
-    public String getTitle() {
-        return title;
-    }
 
 
     @Override

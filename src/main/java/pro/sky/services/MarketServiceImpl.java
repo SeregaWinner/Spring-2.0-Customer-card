@@ -12,17 +12,16 @@ import java.util.*;
 @SessionScope
 public class MarketServiceImpl {
 
-    private final List<Integer> itemMarket;
+    ;
     private final Basket basket;
 
 
-    public MarketServiceImpl(List<Integer> itemMarket, Basket basket) {
-        this.itemMarket = itemMarket;
+    public MarketServiceImpl( Basket basket) {
         this.basket = basket;
     }
 
-    public void add(List<Integer> ids) {
-        basket.add(ids);
+    public void add(List<Integer> id) {
+        basket.add(id);
 
     }
 
